@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5167f1849a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     <title>Pandemic Tracker</title>
   </head>
   <body>
@@ -33,26 +35,28 @@
      <div class="intro">
       <h1>Somalia Covid-19 Cases</h1>
      </div>
-      <div class=" d-flex flex-row justify-content-around heading">
+      <div class=" container-fluid heading ">
+        <div class="row">
+          <div class="col-md-4 first">
+            <h3>Total Confirmed</h3>
+            <h1 class="total confirmed"></h1>
+          </div>
 
-        <div class="first">
-          <h3>Total Confirmed</h3>
-          <h1 class="total confirmed"></h1>
-        </div>
-        <div class="second">
-          <h3>Total Death</h3>
-          <h1 class="total death"></h1>
-        </div>
-        <div class="third">
-          <h3>Total Recovered</h3>
-          <h1 class="total recovered"></h1>
-        </div>
+          <div class="col-md-4 second">
+            <h3>Total Death</h3>
+            <h1 class="total death"></h1>
+          </div>
 
-
+          <div class="col-md-4 third">
+            <h3>Total Recovered</h3>
+            <h1 class="total recovered"></h1>
+          </div>
+         
+        </div>
       </div>
       <div class="world">
-        <h3>The Global Covie-19 Cases</h3>
-        
+        <div><h3>The Global interactive Map</h3></div>
+        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" ></iframe>
       </div>
       <!-- footer sectionn  -->
       <footer>
@@ -62,7 +66,7 @@
           <hr class="container thinline">
           <div class="copyright">
             <p></p>
-            <p>&copy; 2020 <a href="contact.html"> Assad Ahmed</a><p></p>
+            <p>&copy; 2020 <a href="https://mail.google.com/mail"> Assad Ahmed</a><p></p>
           </div>
         </div>
       </footer>
@@ -78,23 +82,26 @@
           
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Countries</h4>
+              <h4 class="modal-title">Contact Us</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             
             <!-- Modal body -->
             <div class="modal-body p-0">
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>Total Confirmed</th>
-                    <th>Total Death</th>
-                    <th>Total Recovered</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="book-list"></tbody>
-              </table>
+              <form>
+                <div class="form-group">
+                  
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <textarea rows="4" cols="50" name="comment" form="usrform">
+                    Enter text here...</textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+              </form>
             </div>
             
             <!-- Modal footer -->
