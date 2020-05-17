@@ -34,7 +34,7 @@ nav
 }
 .navbar-dark .navbar-nav .nav-link:focus
 {
-  color: black;
+  color: white;
 }
 .bg-dark
 {
@@ -135,6 +135,7 @@ textarea, input
 /* FOOTER DIV STARTS HERE */
 footer
 {
+  height: 20vh;
   margin-top: 20px;
   background-color: #1a0033;
   color: white;
